@@ -11,7 +11,7 @@ You’re a fintech engineer who’s working at one of the five largest banks in 
 * Add Relevant User Inputs to the Streamlit interface.
 * Test the PyChain Ledger by Storing Records.
 
-## Dependencies
+## Language and Tools
 
 * Python 
 * Hashlib
