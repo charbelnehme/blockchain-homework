@@ -22,6 +22,9 @@ You’ll make the following updates to the provided Python file for this assignm
 
 ![pychain_ledger_01](https://user-images.githubusercontent.com/95597283/167287147-dd248704-8afa-479c-8aec-db166c55002f.png)
 
+![pychain_animated_gif](https://user-images.githubusercontent.com/95597283/167287755-d017366e-9783-4935-8391-f7c7c0268486.gif)
+
+
 <img width="952" alt="block_hash" src="https://user-images.githubusercontent.com/95597283/167287159-519ca417-1ae8-4d3e-a496-0e28ec1ce4e5.png">
 
 ![balloons](https://user-images.githubusercontent.com/95597283/167287166-2afca247-0029-49d6-96c5-ceab7b6cedd8.png)
