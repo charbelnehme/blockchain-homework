@@ -44,11 +44,11 @@ st.snow
 
 ## Block Difficulty
 
-
-
-
-
+![Screenshot (28)](https://user-images.githubusercontent.com/95597283/167314328-2fc5a32a-6449-4e87-82cc-8f236cfb5305.png)
 
 ## Block Content and Hash Verification
 
+![Screenshot (22)](https://user-images.githubusercontent.com/95597283/167314479-4110e1c2-3f49-4439-8bf1-ec580541aace.png)
+
+![Screenshot (18)](https://user-images.githubusercontent.com/95597283/167314496-0e3e7108-292e-4f64-be19-1d465d4ca6a9.png)
 
