@@ -1,19 +1,44 @@
 # PyChain Ledger
 
-
-https://user-images.githubusercontent.com/95597283/167296704-6a6a0737-a0d0-401d-bef5-e920199527a7.mp4
+![application-image](https://user-images.githubusercontent.com/95597283/167297226-97e72806-ad26-4b4f-b4bf-a83a0a83d07a.png)
 
 You’re a fintech engineer who’s working at one of the five largest banks in the world. You were recently promoted to act as the lead developer on their decentralized finance team. Your task is to build a blockchain-based ledger system, complete with a user-friendly web interface. This ledger should allow partner banks to conduct financial transactions (that is, to transfer money between senders and receivers) and to verify the integrity of the data in the ledger.
 
-### User Interface
+## Project Requirements 
+
+* Create a new data class named Record. This class will serve as the blueprint for the financial transaction records that the blocks of the ledger will store.
+* Modify the existing Block data class to store Record data.
+* Add Relevant User Inputs to the Streamlit interface.
+* Test the PyChain Ledger by Storing Records.
+
+## Dependencies
+
+* Python 
+* Hashlib
+* Streamlit 
+
+## User Interface
 
 ![pychain_ledger_01](https://user-images.githubusercontent.com/95597283/167287147-dd248704-8afa-479c-8aec-db166c55002f.png)
 
-### Transaction Records
+## Streamlit Elements
+```
+st.write
+st.markdown
+st.text
+st.dataframe
+st.table
+st.buton
+st.slider
+st.sidebar
+st.progress
+st.snow
+```
+## Transaction Records
 
 ![pychain_animated_gif](https://user-images.githubusercontent.com/95597283/167287755-d017366e-9783-4935-8391-f7c7c0268486.gif)
 
-### Block Difficulty
+## Block Difficulty
 
 <img width="952" alt="block_hash" src="https://user-images.githubusercontent.com/95597283/167287159-519ca417-1ae8-4d3e-a496-0e28ec1ce4e5.png">
 
@@ -21,6 +46,6 @@ You’re a fintech engineer who’s working at one of the five largest banks in 
 
 ![snow](https://user-images.githubusercontent.com/95597283/167287170-1e253e3b-e109-4fb5-a483-e6d4863bf607.png)
 
-### Block Content and Hash Verification
+## Block Content and Hash Verification
 
 ![pychain_ledger_complete_02](https://user-images.githubusercontent.com/95597283/167287219-a41dba55-376c-4abc-8bff-ab51f23496d0.png)
