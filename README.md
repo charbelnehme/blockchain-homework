@@ -24,29 +24,74 @@ You’re a fintech engineer who’s working at one of the five largest banks in 
 ![Screenshot (17)](https://user-images.githubusercontent.com/95597283/167301201-07aade7f-9b2e-4f1e-8645-6b18a8273ef3.png)
 
 ## Streamlit Elements
+
+The following Streamlit elements were provided in the starter code for the web interface:  
+
 ```
 st.write
 st.markdown
 st.text
 st.dataframe
-st.table
 st.buton
-st.slider
 st.sidebar
-st.progress
-st.snow
+st.slider 
 ```
+
+The following additional elements were used in my PyChain solution: 
+```
+st.progress
+st.table
+```
+In addition, the starter code for the st.slider element was revised in my final submission.
+
+## st.progress
+
+```ruby
+st.sidebar.write("# Progress Bar")
+
+progress_bar = st.sidebar.progress(1)
+pychain.progress_bar = progress_bar  
+
+for percent_complete in range(100):
+    time.sleep(0.01)  
+    progress_bar.progress(percent_complete +1)
+```
+
+## st.table
+```ruby
+# PyChain table
+st.table(pychain_df)
+```
+
+## st.slider
+```ruby
+# Slider: mining difficulty
+st.sidebar.write("# Block Difficulty")
+difficulty = st.sidebar.slider("Your selection correlates with the computational power requirements for PyChain's consensus algorithm.", 
+                                min_value=1, max_value=100)
+pychain.difficulty = difficulty
+```
+
 ## Transaction Records
 
 ![Screenshot (16)](https://user-images.githubusercontent.com/95597283/167300995-3bd7aeb6-1173-46b8-b772-69760653514f.png)
 
 ![Screenshot (25)](https://user-images.githubusercontent.com/95597283/167301040-2f981638-2bf6-4b1d-bf8c-57c74d32545c.png)
 
+
+
+
 ## Block Difficulty
 
 ![Screenshot (28)](https://user-images.githubusercontent.com/95597283/167314328-2fc5a32a-6449-4e87-82cc-8f236cfb5305.png)
 
+
+
+
 ## Block Content and Hash Verification
+
+
+
 
 ![Screenshot (22)](https://user-images.githubusercontent.com/95597283/167314479-4110e1c2-3f49-4439-8bf1-ec580541aace.png)
 
