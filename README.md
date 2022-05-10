@@ -37,13 +37,11 @@ st.sidebar
 st.slider 
 ```
 
-The following additional elements were used in my PyChain solution: 
+The following additional elements were included in my PyChain solution:
 ```
 st.progress
 st.table
 ```
-In addition, the starter code for the st.slider element was revised in my final submission.
-
 ## st.progress
 
 ```ruby
@@ -56,14 +54,30 @@ for percent_complete in range(100):
     time.sleep(0.01)  
     progress_bar.progress(percent_complete +1)
 ```
-
 ## st.table
+
+This differs from st.dataframe in that the table in this case is static: its entire contents are laid out directly on the page.
+
 ```ruby
 # PyChain table
 st.table(pychain_df)
 ```
-
 ## st.slider
+
+Display a slider widget.
+
+This supports int, float, date, time, and datetime types.
+
+This also allows you to render a range slider by passing a two-element tuple or list as the value.
+
+The difference between st.slider and st.select_slider is that slider only accepts numerical or date/time data and takes a range as input, while select_slider accepts any datatype and takes an iterable set of options.
+
+```
+st.slider
+
+The starter code for the st.slider element was revised in my final submission.
+```
+
 ```ruby
 # Slider: mining difficulty
 st.sidebar.write("# Block Difficulty")
@@ -71,27 +85,63 @@ difficulty = st.sidebar.slider("Your selection correlates with the computational
                                 min_value=1, max_value=100)
 pychain.difficulty = difficulty
 ```
-
 ## Transaction Records
 
+```ruby
+block = Block("test", 1)
+print(f"The original nonce is: {block.nonce}")
+print(f"The original block hash is: {block.hash_block()}")
+
+block.nonce += 1
+print(f"The new nonce is now: {block.nonce}")
+print(f"The new block hash is now: {block.hash_block()}") 
+
+st.write(f"The block's hash is: {prev_block_hash}")
+```
 ![Screenshot (16)](https://user-images.githubusercontent.com/95597283/167300995-3bd7aeb6-1173-46b8-b772-69760653514f.png)
 
 ![Screenshot (25)](https://user-images.githubusercontent.com/95597283/167301040-2f981638-2bf6-4b1d-bf8c-57c74d32545c.png)
 
-
-
-
 ## Block Difficulty
+```ruby
+st.sidebar.write("# Block Difficulty")
+difficulty = st.sidebar.slider("Your selection correlates with the computational power requirements for PyChain's consensus algorithm.", min_value=1, max_value=100)
+pychain.difficulty = difficulty
 
+st.sidebar.write("# Progress Bar")
+
+progress_bar = st.sidebar.progress(1)
+pychain.progress_bar = progress_bar  
+
+for percent_complete in range(100):
+    time.sleep(0.01)  
+    progress_bar.progress(percent_complete +1)
+```
 ![Screenshot (28)](https://user-images.githubusercontent.com/95597283/167314328-2fc5a32a-6449-4e87-82cc-8f236cfb5305.png)
-
-
-
 
 ## Block Content and Hash Verification
 
+```ruby
+Hash Records
 
+block = Block("test", 1)
+print(f"The original nonce is: {block.nonce}")
+print(f"The original block hash is: {block.hash_block()}")
 
+block.nonce += 1
+print(f"The new nonce is now: {block.nonce}")
+print(f"The new block hash is now: {block.hash_block()}") 
+
+st.write(f"The block's hash is: {prev_block_hash}")
+```
+
+```ruby 
+Mining
+
+with st.spinner('PyChain is currently validating your transaction. Thank you for your patience.'):
+    time.sleep(0)
+st.success('Proof of Work (Pow) Verification Outcome: SUCCESS!')
+```
 
 ![Screenshot (22)](https://user-images.githubusercontent.com/95597283/167314479-4110e1c2-3f49-4439-8bf1-ec580541aace.png)
 
